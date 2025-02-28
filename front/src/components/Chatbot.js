@@ -43,7 +43,7 @@ function Chatbot() {
 
     try {
       const response = await axios.post(
-        process.env.API_URL,
+        "https://chatbot-4-bp18.onrender.com/api/chatbot/ask",
         {
           question: input,
         }
