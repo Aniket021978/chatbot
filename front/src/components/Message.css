@@ -1,0 +1,45 @@
+.user-message {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 5px 0;
+    text-align: right;
+    max-width: 70%;
+    align-self: flex-end;
+    animation: slideInRight 0.5s ease-in-out;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 5px 0;
+    text-align: left;
+    max-width: 70%;
+    align-self: flex-start;
+    animation: slideInLeft 0.5s ease-in-out;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
