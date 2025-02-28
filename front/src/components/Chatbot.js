@@ -43,7 +43,7 @@ function Chatbot() {
 
     try {
       const response = await axios.post(
-        `${process.env.API_URL}/api/chatbot/ask`,
+        process.env.API_URL,
         {
           question: input,
         }
