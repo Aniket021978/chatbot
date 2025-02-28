@@ -1,79 +1,93 @@
-## Overview
-This chatbot is designed to assist users with "how-to" questions related to four Customer Data Platforms (CDPs): Segment, mParticle, Lytics, and Zeotap. It extracts relevant information from the official documentation of these CDPs to provide accurate responses.
+# 📌 Customer Data Platform (CDP) Support Chatbot
 
-## Features
-### Core Functionalities
-- **Answer "How-to" Questions**:
-  - Understands and responds to user inquiries about performing specific tasks in each CDP.
-  - Example: "How do I set up a new source in Segment?"
-- **Extract Information from Documentation**:
-  - Retrieves relevant information directly from the official CDP documentation.
-  - Navigates through the documentation to extract necessary steps.
-- **Handles Question Variations**:
-  - Understands differently phrased questions.
-  - Handles long questions without breaking.
-  - Filters out irrelevant questions (e.g., non-CDP related queries).
+## 🚀 Overview
+This chatbot is designed to assist users with "how-to" questions related to four major Customer Data Platforms (CDPs): **Segment, mParticle, Lytics, and Zeotap**. The chatbot efficiently extracts relevant information from official CDP documentation to provide precise responses. It ensures accurate guidance on platform-specific functionalities and supports cross-platform comparisons.
 
-### Bonus Features
-- **Cross-CDP Comparisons**:
-  - Answers comparative questions about features across different CDPs.
-  - Example: "How does Segment's audience creation process compare to Lytics'?"
-- **Advanced "How-to" Questions**:
-  - Provides responses for complex platform-specific queries.
-  - Includes advanced configurations and integrations.
-- **Clear Chat Functionality**:
-  - Allows users to reset the chat for a fresh start.
-- **Dark Mode Support**:
-  - Enhances UI experience with a dark mode theme.
+## 🌟 Key Features
+### 🔹 Core Functionalities
+- **Answer "How-to" Questions**
+  - Accurately understands and responds to platform-related queries.
+  - Example: *"How do I set up a new source in Segment?"*
+- **Documentation Extraction**
+  - Automatically retrieves and extracts necessary steps from official documentation.
+- **Natural Language Processing (NLP)**
+  - Handles different phrasings of questions and long-form queries efficiently.
+  - Filters out non-relevant queries to maintain accuracy.
 
-## Project Structure
+### 🎯 Advanced Features
+- **Cross-CDP Comparisons**
+  - Provides insights into feature differences between CDPs.
+  - Example: *"How does Lytics compare to Segment for audience segmentation?"*
+- **Advanced "How-to" Support**
+  - Handles complex, platform-specific queries.
+  - Includes step-by-step guidance for advanced configurations and integrations.
+- **Conversation Management**
+  - **Clear Chat Functionality:** Resets the chat interface for a fresh start.
+  - **Dark Mode Support:** Enhances UI with a dark theme option.
+
+## 🏗️ Project Structure
 ```
 ZEOTAP2/
-│── back/
-│   ├── controllers/
-│   ├── node_modules/
-│   ├── routes/
-│   ├── services/
-│   ├── utils/
-│   ├── package.json
-│   ├── server.js
-│── front/
-│   ├── node_modules/
-│   ├── public/
+│── back/                  # Backend Implementation
+│   ├── controllers/       # Handles chatbot logic and responses
+│   ├── node_modules/      # Dependencies
+│   ├── routes/            # API routes for chatbot interactions
+│   ├── services/          # Documentation extraction and NLP processing
+│   ├── utils/             # Helper functions
+│   ├── package.json       # Backend dependencies
+│   ├── server.js          # Main backend server file
+│
+│── front/                 # Frontend Implementation
+│   ├── node_modules/      # Dependencies
+│   ├── public/            # Static assets
 │   ├── src/
-│   │   ├── components/
+│   │   ├── components/    # React components for chatbot UI
 │   │   │   ├── Chatbot.css
 │   │   │   ├── Chatbot.js
 │   │   │   ├── Message.css
 │   │   │   ├── Message.js
-│   │   ├── App.js
-│   │   ├── index.js
-│   ├── package.json
-│── README.md
+│   │   ├── App.js         # Main React application file
+│   │   ├── index.js       # Application entry point
+│   ├── package.json       # Frontend dependencies
+│
+│── README.md              # Documentation
 ```
 
-## Installation & Setup
+## ⚡ Installation & Setup
 ### Prerequisites
-- Node.js installed
-- MongoDB (if using a database for logs or user interactions)
+Ensure you have the following installed on your system:
+- **Node.js** (LTS version recommended)
+- **MongoDB** (If storing logs or user interactions)
 
-### Backend Setup
+### 🔧 Backend Setup
 ```bash
 cd back
-npm install
-node server.js
+npm install   # Install dependencies
+node server.js   # Start the backend server
 ```
 
-### Frontend Setup
+### 🎨 Frontend Setup
 ```bash
 cd front
-npm install
-npm start
+npm install   # Install dependencies
+npm start   # Start the frontend application
 ```
 
-## Usage
-1. Open the frontend in the browser.
-2. Type your query related to Segment, mParticle, Lytics, or Zeotap.
-3. The chatbot retrieves relevant information and displays an answer.
-4. Use the **Clear Chat** button to reset the conversation.
-5. Toggle **Dark Mode** for a better UI experience.
+## 🔥 Usage
+1. **Launch the Frontend**: Open the chatbot interface in your browser.
+2. **Ask Questions**: Type queries related to Segment, mParticle, Lytics, or Zeotap.
+3. **Receive Instant Answers**: The chatbot fetches relevant information and provides accurate responses.
+4. **Clear Chat**: Reset the conversation anytime using the *Clear Chat* button.
+5. **Dark Mode**: Switch between light and dark themes for an enhanced UI experience.
+
+## 🛠️ Technologies Used
+### Backend
+- **Node.js & Express.js** - REST API and chatbot logic
+- **Cheerio** - Scrapes and retrieves documentation details
+- **NLP.js** - Natural language processing for question handling
+
+### Frontend
+- **React.js** - Modern UI framework
+- **CSS** - Responsive styling
+- **Material-UI** - UI components
+
