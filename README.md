@@ -48,6 +48,7 @@ ZEOTAP2/
 │   │   │   ├── Message.js
 │   │   ├── App.js         # Main React application file
 │   │   ├── index.js       # Application entry point
+│   ├── .env               # Environment variables (API URL)
 │   ├── package.json       # Frontend dependencies
 │
 │── README.md              # Documentation
@@ -73,6 +74,14 @@ npm install   # Install dependencies
 npm start   # Start the frontend application
 ```
 
+### 🌍 Environment Variables
+Create a **.env** file inside the `front/` directory and add:
+```
+REACT_APP_CHATBOT_API=http://localhost:5000/api/chatbot/ask  # Local development
+# REACT_APP_CHATBOT_API=https://your-deployed-backend.com/api/chatbot/ask  # Deployment URL
+```
+> **Note:** Use the local API URL for development and switch to the deployment URL when hosting the project.
+
 ## 🔥 Usage
 1. **Launch the Frontend**: Open the chatbot interface in your browser.
 2. **Ask Questions**: Type queries related to Segment, mParticle, Lytics, or Zeotap.
@@ -89,5 +98,3 @@ npm start   # Start the frontend application
 ### Frontend
 - **React.js** - Modern UI framework
 - **CSS** - Responsive styling
-- **Material-UI** - UI components
-
